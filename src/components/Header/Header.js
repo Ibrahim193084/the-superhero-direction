@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
            <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
@@ -26,8 +26,10 @@ const Header = () => {
         </ul>
       
       {/* <form className="d-flex"> */}
-        <input className="form-control me-2 ms-5" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-dark" type="submit">Search</button>
+      {/*handleSearch function call */}
+        <input onChange={props.handleSearch}
+        className="form-control me-2 ms-5" type="search" placeholder="Search" aria-label="Search"/>
+        
       {/* </form> */}
     </div>
   </div>
