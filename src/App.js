@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ProjectBuilderContainer from './components/ProjectBuilderContainer/ProjectBuilderContainer';
 
 function App() {
   return (
-    <div>
-      
+    <div className="container">
+      <ProjectBuilderContainer/>
+
    
     </div>
   );
