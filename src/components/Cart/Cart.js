@@ -6,8 +6,10 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const Cart = (props) => {
     // console.log(props)
     const {cart} = props
+    //use reducer for upgrade total cost
     const totalReducer = (previous,builder)=>previous + builder.salary;
     const total = cart.reduce(totalReducer,0)
+    //font awesome icon
     const element = <FontAwesomeIcon icon={faShoppingCart} />
     return (
         <div>

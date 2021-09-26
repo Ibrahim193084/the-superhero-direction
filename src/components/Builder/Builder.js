@@ -5,7 +5,9 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Builder = (props) => {
     // console.log(props.builder)
+    //builder information
     const {name, age , country,  salary, projectBuild, img, catagory} = props.builder
+    //font awesome icon
     const element = <FontAwesomeIcon icon={faShoppingCart} />
 
     return (
@@ -23,8 +25,6 @@ const Builder = (props) => {
           
         </div>
       </div>
-
-
     );
 };
 
